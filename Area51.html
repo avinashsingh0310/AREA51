@@ -9,47 +9,138 @@
 			<!--<div style ="background-image:url('a.jpg');">-->
 				<style>
 					body{
-						background-image:url('a.jpg');
+						background-image:url('spider.jpg');
 						background-size:100%100%;
+					}
+					.center{
+
+						margin:auto;
+						padding: 60px 0;
+						width:35%;
+						border:3px solid blue;
+					}
+					.clearfix{
+						overflow:auto;
+					}
+					input[type=text],select{
+						width:40%;
+						padding:12px 20px;
+						margin:8px 0;
+						display:inline-block;
+						box-sizing:border-box;
+						border:none;
+						border-bottom: 2px solid black;
+					}
+					input[type=email],select{
+						width:40%;
+						padding:12px 20px;
+						margin:8px 0;
+						display:inline-block;
+						box-sizing:border-box;
+						border:none;
+						border-bottom: 2px solid black;
+					}
+					input[type=number],select{
+						width:40%;
+						padding:12px 20px;
+						margin:8px 0;
+						display:inline-block;
+						box-sizing:border-box;
+						border:none;
+						border-bottom: 2px solid black;
+					}
+					input[type=password],select{
+						width:40%;
+						padding:12px 20px;
+						margin:8px 0;
+						display:inline-block;
+						box-sizing:border-box;
+						border:none;
+						border-bottom: 2px solid black;
+					}
+					input[type=date],select{
+						width:40%;
+						padding:12px 20px;
+						margin:8px 0;
+						display:inline-block;
+						box-sizing:border-box;
+						border:none;
+						border-bottom: 2px solid black;
+					}
+					input[type=submit]{
+						width:20%;
+						background-color: purple;
+						color:white;
+						padding:12px 20px;
+						margin:8px 0;
+						border:none;
+						border-radius:4px;
+						cursor:pointer;
+					}
+					
+					input[type=submit]:hover{
+						background-color: #45a049
+					}
+					div{
+						border-radius:5px;
+						
+						padding: 20px;
 					}
 				</style>
 		</head>
-		<p style ="color:black;font-size:300%;background-color:navy;text-align:center;">Area 51</p>
+		<p style ="color:white;font-size:400%;background-color:darkblue;text-align:left;background-size:100%40%">Area 51</p>
 		<!--<p><img src="a.jpg"alt="DRKWORLD"width="250"height="200"></p>-->
 		<!--<style>
 			body{background-color:sapphire;}
 		</style>-->
+		<div class="center">
 		<center>
-		<form>
+		<form action="/action_page.php">
 			
-			<h style="color:black;font-size:250%;"><b>Create a new account</h>
-			<p style="font-size:120%">	It's quick and easy</p>
-			<input type="text"placeholder="First Name" >
-			<input type="text"placeholder="Last Name"><br><br>
-			<input type="email"placeholder="Email Address"><br><br>
-			
-			<input type="password"placeholder="password"><br><br>
-			<h1 style ="color:grey;font-size:150%">Gender</h1>
-			<input type="radio"name="gender">Male <input name="gender"type="radio">Female <input name="gender"type="radio">Other
-			<h2 style ="color:grey;font-size:150%;">Date of birth</h2>
-			<input type="date"><br><br>
-			<!--<button>a button</button>-->
-			<input list="countries"placeholder="Choose a country">
+			<h1 style="color:black;font-size:275%;"><b>Create a new account</h1>
+			<p style="font-size:150%;">It's quick and easy.</p>
+			<!---<label for="fname">First Name</label><br>-->
+			<input type="text"placeholder="Your first name.." ><br>
+			<!---<label for="lname">Last Name</label>-->
+			<input type="text"placeholder="Your surname.."><br><br>
+			<!--<label for="email">Email Address</label>-->
+			<input type="email"placeholder="Email address"><br><br>
+			<!---<input list="countries"placeholder="Choose a country">
 			<datalist id ="countries" >
-				<!--<option >Choose a country</option>-->
+				<option >Choose a country</option>
 				<option selected value="+91">India</option>
 				<option value="+11">United states of america</option>
 				<option value ="+25">Australia</option>
 				<option value="+256">United Kingdom</option>
 				<option value ="+001">Canada</option>
-			</datalist>
-			<input type="number"placeholder="Phone Number"><br><br>
-			<input type="checkbox">By clicking this , you will agree to ours terms and condition.</p>
-			<input type="submit"value="Sign up">
+			</datalist>--->
+			<!--<label for="country">Country</label>-->
+			<select id="country"name="country">
+				<option selected value="+91">India</option>
+				<option value="+11">United states of america</option>
+				<option value ="+25">Australia</option>
+				<option value="+256">United Kingdom</option>
+				<option value ="+001">Canada</option>
+			</select><br>
+			<!---<label for="Number">Mobile Number</label>-->
+			<input type="number"placeholder="Mobile Number"><br><br>
+			<!---<label for="pass">Password</label>--->
+			<input type="Password"placeholder="Password"><br><br>
+			<label style ="font-size:125%;"for="Gender">Gender</label><br>
+			<input type="radio"name="gender">Male <input name="gender"type="radio">Female <input name="gender"type="radio">Other<br><br>
+			<label style="font-size:125%;" for ="DOB">Date of Birth</label><br>
+			<input type="date"><br><br>
+			<!--<button>a button</button>-->
 			
+			
+			<input type="checkbox">By clicking this,you will agree to ours terms and condition.</p>
+			<input type="submit"value="Sign up"><br><br>
+			<a style="background-color:white;font-size:150%;color:black;"href="https://www.gmail.com/"target="_blank">Continue with Google</a><br><br>
+			<a style="background-color:white;color:black;font-size:150%;"href="https://www.facebook.com/"target="_blank">Continue with Facebook</a>
+
 		</form>
 		</center>
-
+	</div>
 
 	</body>
 </html>
